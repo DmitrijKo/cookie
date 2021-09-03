@@ -1,0 +1,11 @@
+{{#if error}}
+<h1>{{error}}</h1>
+{{/if}}
+
+<form action="doRegister" method="post">
+  User name: <input type="text" name="user"><br>
+  Password: <input type="password" name="pass"><br>
+  <input type="submit" value="Register">
+</form>
+
+<a href="/users">Back</a>

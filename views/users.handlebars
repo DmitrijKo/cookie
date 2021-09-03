@@ -1,0 +1,16 @@
+{{#if user}}
+<h1>Hello {{user}}; request count {{counter}}</h1>
+<a href="/test">test</a>
+<a href="/logout">logout</a>
+{{#if users}}
+<ul>
+{{#each users}}
+<li>{{user}}</li>
+{{/each}}
+</ul>
+{{/if}}
+{{else}}
+<h1>Not logged in</h1>
+<a href="/login">login</a>
+<a href="/register">register</a>
+{{/if}}
